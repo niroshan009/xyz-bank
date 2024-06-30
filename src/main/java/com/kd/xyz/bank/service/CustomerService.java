@@ -1,14 +1,15 @@
 package com.kd.xyz.bank.service;
 
+import com.kd.xyz.bank.dto.UserDto;
 import com.kd.xyz.bank.entity.User;
 
 import java.util.List;
 
 public interface CustomerService {
 
-    public List<User> getAllUsers();
+    public List<UserDto> getAllUsers();
 
-    public User findUserById(Long id);
+    public UserDto findUserById(Long id);
 
-    public User saveUser(User user);
+    public UserDto saveUser(User user);
 }

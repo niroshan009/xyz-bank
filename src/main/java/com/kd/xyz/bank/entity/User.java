@@ -6,11 +6,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.id.factory.spi.GenerationTypeStrategy;
 
 @Entity
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
